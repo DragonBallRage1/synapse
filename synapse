@@ -31,7 +31,7 @@ local Toggle = Instance.new("TextButton")
 -- Properties:
 
 Menu.Name = "Menu"
-Menu.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Menu.Parent = game.Players.LocalPlayer:WaitForChild("CoreGui")
 Menu.ResetOnSpawn = false
 
 Main.Name = "Main"
