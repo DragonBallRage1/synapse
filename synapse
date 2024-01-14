@@ -28,6 +28,7 @@ local Toggle = Instance.new("TextButton")
 
 Menu.Name = "Menu"
 Menu.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Menu.ResetOnSpawn = false
 
 Main.Name = "Main"
 Main.Parent = Menu
@@ -37,6 +38,7 @@ Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.11256624, 0, -0.070234172, 0)
 Main.Size = UDim2.new(0, 593, 0, 335)
+Main.Visible = false
 
 Corner.CornerRadius = UDim.new(0, 25)
 Corner.Name = "Corner"
@@ -194,7 +196,7 @@ Toggle.TextSize = 14.000
 
 -- Scripts:
 
-local function DWFGWUQ_fake_script() -- Close_2.Hack close 
+local function TDXA_fake_script() -- Close_2.Hack close 
 	local script = Instance.new('LocalScript', Close_2)
 
 	local hack = script.Parent.Parent
@@ -204,8 +206,8 @@ local function DWFGWUQ_fake_script() -- Close_2.Hack close
 		icon.Visible = true
 	end)	
 end
-coroutine.wrap(DWFGWUQ_fake_script)()
-local function RPPHQ_fake_script() -- Open_2.Drag 
+coroutine.wrap(TDXA_fake_script)()
+local function VEYFJZ_fake_script() -- Open_2.Drag 
 	local script = Instance.new('LocalScript', Open_2)
 
 	--// Services
@@ -225,7 +227,7 @@ local function RPPHQ_fake_script() -- Open_2.Drag
 	local InitialX, InitialY, UIInitialPos
 	
 	local ViewPortSize = workspace.Camera.ViewportSize
-	local Speed = 2.5
+	local Speed = 1
 	
 	--// Functions
 	
@@ -266,8 +268,8 @@ local function RPPHQ_fake_script() -- Open_2.Drag
 		end
 	end)
 end
-coroutine.wrap(RPPHQ_fake_script)()
-local function CIAREW_fake_script() -- Toggle.Hack open 
+coroutine.wrap(VEYFJZ_fake_script)()
+local function LPFYQ_fake_script() -- Toggle.Hack open 
 	local script = Instance.new('LocalScript', Toggle)
 
 	local hack = script.Parent.Parent.Parent.Parent.Main
@@ -277,4 +279,4 @@ local function CIAREW_fake_script() -- Toggle.Hack open
 		icon.Visible = false
 	end)	
 end
-coroutine.wrap(CIAREW_fake_script)()
+coroutine.wrap(LPFYQ_fake_script)()
