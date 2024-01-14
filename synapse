@@ -8,19 +8,23 @@ local Main = Instance.new("Frame")
 local Corner = Instance.new("UICorner")
 local Tab = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local Main_2 = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
-local Hacks = Instance.new("ScrollingFrame")
+local Main_2 = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
-local Hack1 = Instance.new("TextButton")
+local Hacks = Instance.new("ScrollingFrame")
 local UICorner_4 = Instance.new("UICorner")
+local Hack1 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
 local Synapse = Instance.new("ImageLabel")
 local Text = Instance.new("TextLabel")
 local Close = Instance.new("ImageLabel")
 local Close_2 = Instance.new("TextButton")
 local Open = Instance.new("Frame")
 local Open_2 = Instance.new("Frame")
-local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
 local Synapse_2 = Instance.new("ImageLabel")
 local Toggle = Instance.new("TextButton")
 
@@ -56,6 +60,30 @@ Tab.Size = UDim2.new(0, 176, 0, 272)
 UICorner.CornerRadius = UDim.new(0, 15)
 UICorner.Parent = Tab
 
+Frame.Parent = Tab
+Frame.BackgroundColor3 = Color3.fromRGB(90, 0, 1)
+Frame.BackgroundTransparency = 0.250
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0528751723, 0, 0.0759999305, 0)
+Frame.Size = UDim2.new(0, 157, 0, 35)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 157, 0, 36)
+TextLabel.Font = Enum.Font.DenkOne
+TextLabel.Text = "Main"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 10)
+UICorner_2.Parent = Frame
+
 Main_2.Name = "Main"
 Main_2.Parent = Main
 Main_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -65,8 +93,8 @@ Main_2.BorderSizePixel = 0
 Main_2.Position = UDim2.new(0.31939286, 0, 0.169999942, 0)
 Main_2.Size = UDim2.new(0, 397, 0, 272)
 
-UICorner_2.CornerRadius = UDim.new(0, 15)
-UICorner_2.Parent = Main_2
+UICorner_3.CornerRadius = UDim.new(0, 15)
+UICorner_3.Parent = Main_2
 
 Hacks.Name = "Hacks"
 Hacks.Parent = Main_2
@@ -79,12 +107,12 @@ Hacks.Position = UDim2.new(-2.3061142e-07, 0, -5.60984894e-08, 0)
 Hacks.Size = UDim2.new(0, 396, 0, 272)
 Hacks.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
 
-UICorner_3.CornerRadius = UDim.new(0, 15)
-UICorner_3.Parent = Hacks
+UICorner_4.CornerRadius = UDim.new(0, 15)
+UICorner_4.Parent = Hacks
 
 Hack1.Name = "Hack1"
 Hack1.Parent = Hacks
-Hack1.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Hack1.BackgroundColor3 = Color3.fromRGB(90, 0, 1)
 Hack1.BackgroundTransparency = 0.250
 Hack1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Hack1.BorderSizePixel = 0
@@ -93,15 +121,27 @@ Hack1.Size = UDim2.new(0, 355, 0, 36)
 Hack1.SizeConstraint = Enum.SizeConstraint.RelativeYY
 Hack1.Font = Enum.Font.SourceSans
 Hack1.LineHeight = 0.000
-Hack1.Text = "Show Lines"
+Hack1.Text = ""
 Hack1.TextColor3 = Color3.fromRGB(255, 255, 255)
 Hack1.TextSize = 27.000
-Hack1.TextStrokeTransparency = 5.000
 Hack1.TextWrapped = true
 Hack1.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_4.CornerRadius = UDim.new(0, 10)
-UICorner_4.Parent = Hack1
+UICorner_5.CornerRadius = UDim.new(0, 10)
+UICorner_5.Parent = Hack1
+
+TextLabel_2.Parent = Hack1
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 143, 0, 36)
+TextLabel_2.Font = Enum.Font.DenkOne
+TextLabel_2.Text = "GodMode"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
 
 Synapse.Name = "Synapse"
 Synapse.Parent = Main
@@ -168,8 +208,8 @@ Open_2.Position = UDim2.new(1, 0, 0.7741009, 0)
 Open_2.Selectable = true
 Open_2.Size = UDim2.new(0, 109, 0, 65)
 
-UICorner_5.CornerRadius = UDim.new(1, 0)
-UICorner_5.Parent = Open_2
+UICorner_6.CornerRadius = UDim.new(1, 0)
+UICorner_6.Parent = Open_2
 
 Synapse_2.Name = "Synapse"
 Synapse_2.Parent = Open_2
@@ -196,7 +236,32 @@ Toggle.TextSize = 14.000
 
 -- Scripts:
 
-local function BDPWE_fake_script() -- Close_2.Hack close 
+local function JRYY_fake_script() -- Hack1.GodMode 
+	local script = Instance.new('LocalScript', Hack1)
+
+	script.Parent.MouseButton1Click:Connect(function() 					
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "Hey bro", -- Required
+			Text = "ey ey god mode enabled run guys", -- Required
+			Duration = 3;
+			Button1 = "ok";
+			Button2 = "shut up nigga";
+			Icon = "http://www.roblox.com/asset/?id=179832363" -- Optional
+		})
+		
+		local fall_dmg = game:GetService("Players").LocalPlayer:FindFirstChild("RemoteEvent")
+		local nan = 0/0
+	
+		if fall_dmg then
+			fall_dmg.FireServer(fall_dmg, "FallDamage", nan)
+		end
+	
+	
+		local mt = getrawmetatable(game) make_writeable(mt) local namecall = mt.namecall mt.namecall = newcclosure(function(self, ...) local meth = getnamecallmethod() local args = {...} if meth == "FireServer" and args[1] == "FallDamage" then return end return namecall(self, ...) end)
+	end)	
+end
+coroutine.wrap(JRYY_fake_script)()
+local function DZRBZW_fake_script() -- Close_2.Hack close 
 	local script = Instance.new('LocalScript', Close_2)
 
 	local hack = script.Parent.Parent
@@ -206,8 +271,8 @@ local function BDPWE_fake_script() -- Close_2.Hack close
 		icon.Visible = true
 	end)	
 end
-coroutine.wrap(BDPWE_fake_script)()
-local function BPWTE_fake_script() -- Open_2.Drag 
+coroutine.wrap(DZRBZW_fake_script)()
+local function MBFWXUC_fake_script() -- Open_2.Drag 
 	local script = Instance.new('LocalScript', Open_2)
 
 	--// Services
@@ -268,8 +333,8 @@ local function BPWTE_fake_script() -- Open_2.Drag
 		end
 	end)
 end
-coroutine.wrap(BPWTE_fake_script)()
-local function ERQCXD_fake_script() -- Toggle.Hack open 
+coroutine.wrap(MBFWXUC_fake_script)()
+local function EANRCFC_fake_script() -- Toggle.Hack open 
 	local script = Instance.new('LocalScript', Toggle)
 
 	local hack = script.Parent.Parent.Parent.Parent.Main
@@ -279,4 +344,4 @@ local function ERQCXD_fake_script() -- Toggle.Hack open
 		icon.Visible = false
 	end)	
 end
-coroutine.wrap(ERQCXD_fake_script)()
+coroutine.wrap(EANRCFC_fake_script)()
