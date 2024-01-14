@@ -196,7 +196,7 @@ Toggle.TextSize = 14.000
 
 -- Scripts:
 
-local function TDXA_fake_script() -- Close_2.Hack close 
+local function BDPWE_fake_script() -- Close_2.Hack close 
 	local script = Instance.new('LocalScript', Close_2)
 
 	local hack = script.Parent.Parent
@@ -206,8 +206,8 @@ local function TDXA_fake_script() -- Close_2.Hack close
 		icon.Visible = true
 	end)	
 end
-coroutine.wrap(TDXA_fake_script)()
-local function VEYFJZ_fake_script() -- Open_2.Drag 
+coroutine.wrap(BDPWE_fake_script)()
+local function BPWTE_fake_script() -- Open_2.Drag 
 	local script = Instance.new('LocalScript', Open_2)
 
 	--// Services
@@ -227,7 +227,7 @@ local function VEYFJZ_fake_script() -- Open_2.Drag
 	local InitialX, InitialY, UIInitialPos
 	
 	local ViewPortSize = workspace.Camera.ViewportSize
-	local Speed = 1
+	local Speed = 1.1
 	
 	--// Functions
 	
@@ -268,8 +268,8 @@ local function VEYFJZ_fake_script() -- Open_2.Drag
 		end
 	end)
 end
-coroutine.wrap(VEYFJZ_fake_script)()
-local function LPFYQ_fake_script() -- Toggle.Hack open 
+coroutine.wrap(BPWTE_fake_script)()
+local function ERQCXD_fake_script() -- Toggle.Hack open 
 	local script = Instance.new('LocalScript', Toggle)
 
 	local hack = script.Parent.Parent.Parent.Parent.Main
@@ -279,4 +279,4 @@ local function LPFYQ_fake_script() -- Toggle.Hack open
 		icon.Visible = false
 	end)	
 end
-coroutine.wrap(LPFYQ_fake_script)()
+coroutine.wrap(ERQCXD_fake_script)()
