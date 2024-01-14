@@ -1,0 +1,280 @@
+-- Gui to Lua
+-- Version: 3.6
+
+-- Instances:
+
+local Menu = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Corner = Instance.new("UICorner")
+local Tab = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Main_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Hacks = Instance.new("ScrollingFrame")
+local UICorner_3 = Instance.new("UICorner")
+local Hack1 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Synapse = Instance.new("ImageLabel")
+local Text = Instance.new("TextLabel")
+local Close = Instance.new("ImageLabel")
+local Close_2 = Instance.new("TextButton")
+local Open = Instance.new("Frame")
+local Open_2 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Synapse_2 = Instance.new("ImageLabel")
+local Toggle = Instance.new("TextButton")
+
+-- Properties:
+
+Menu.Name = "Menu"
+Menu.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Main.Name = "Main"
+Main.Parent = Menu
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.BackgroundTransparency = 0.250
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.11256624, 0, -0.070234172, 0)
+Main.Size = UDim2.new(0, 593, 0, 335)
+
+Corner.CornerRadius = UDim.new(0, 25)
+Corner.Name = "Corner"
+Corner.Parent = Main
+
+Tab.Name = "Tab"
+Tab.Parent = Main
+Tab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Tab.BackgroundTransparency = 0.250
+Tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab.BorderSizePixel = 0
+Tab.Position = UDim2.new(0.0111298067, 0, 0.169999942, 0)
+Tab.Size = UDim2.new(0, 176, 0, 272)
+
+UICorner.CornerRadius = UDim.new(0, 15)
+UICorner.Parent = Tab
+
+Main_2.Name = "Main"
+Main_2.Parent = Main
+Main_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main_2.BackgroundTransparency = 0.250
+Main_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main_2.BorderSizePixel = 0
+Main_2.Position = UDim2.new(0.31939286, 0, 0.169999942, 0)
+Main_2.Size = UDim2.new(0, 397, 0, 272)
+
+UICorner_2.CornerRadius = UDim.new(0, 15)
+UICorner_2.Parent = Main_2
+
+Hacks.Name = "Hacks"
+Hacks.Parent = Main_2
+Hacks.Active = true
+Hacks.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Hacks.BackgroundTransparency = 1.000
+Hacks.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hacks.BorderSizePixel = 0
+Hacks.Position = UDim2.new(-2.3061142e-07, 0, -5.60984894e-08, 0)
+Hacks.Size = UDim2.new(0, 396, 0, 272)
+Hacks.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+
+UICorner_3.CornerRadius = UDim.new(0, 15)
+UICorner_3.Parent = Hacks
+
+Hack1.Name = "Hack1"
+Hack1.Parent = Hacks
+Hack1.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Hack1.BackgroundTransparency = 0.250
+Hack1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hack1.BorderSizePixel = 0
+Hack1.Position = UDim2.new(0.0529999994, 0, 0.0379999988, 0)
+Hack1.Size = UDim2.new(0, 355, 0, 36)
+Hack1.SizeConstraint = Enum.SizeConstraint.RelativeYY
+Hack1.Font = Enum.Font.SourceSans
+Hack1.LineHeight = 0.000
+Hack1.Text = "Show Lines"
+Hack1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hack1.TextSize = 27.000
+Hack1.TextStrokeTransparency = 5.000
+Hack1.TextWrapped = true
+Hack1.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_4.CornerRadius = UDim.new(0, 10)
+UICorner_4.Parent = Hack1
+
+Synapse.Name = "Synapse"
+Synapse.Parent = Main
+Synapse.BackgroundColor3 = Color3.fromRGB(28, 31, 36)
+Synapse.BackgroundTransparency = 1.000
+Synapse.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Synapse.BorderSizePixel = 0
+Synapse.Position = UDim2.new(0.0268229432, 0, 0.0100000026, 0)
+Synapse.Size = UDim2.new(0, 41, 0, 41)
+Synapse.Image = "http://www.roblox.com/asset/?id=9524079125"
+
+Text.Name = "Text"
+Text.Parent = Main
+Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text.BackgroundTransparency = 1.000
+Text.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Text.BorderSizePixel = 0
+Text.Position = UDim2.new(0.411999971, 0, 0, 7)
+Text.Size = UDim2.new(0, 218, 0, 34)
+Text.Font = Enum.Font.SourceSansBold
+Text.Text = "Synapse X Settings"
+Text.TextColor3 = Color3.fromRGB(255, 255, 0)
+Text.TextScaled = true
+Text.TextSize = 14.000
+Text.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.884316862, 0, 0.00986842066, 0)
+Close.Size = UDim2.new(0, 41, 0, 41)
+Close.Image = "http://www.roblox.com/asset/?id=7436812392"
+
+Close_2.Name = "Close"
+Close_2.Parent = Main
+Close_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close_2.BackgroundTransparency = 1.000
+Close_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close_2.BorderSizePixel = 0
+Close_2.Position = UDim2.new(0.884316862, 0, 6.27417318e-09, 0)
+Close_2.Size = UDim2.new(0, 41, 0, 52)
+Close_2.Font = Enum.Font.SourceSans
+Close_2.Text = ""
+Close_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close_2.TextSize = 14.000
+
+Open.Name = "Open"
+Open.Parent = Menu
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.908967376, 0, -0.125, 0)
+Open.Size = UDim2.new(0, 0, 0, 305)
+
+Open_2.Name = "Open"
+Open_2.Parent = Open
+Open_2.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Open_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Open_2.BorderSizePixel = 0
+Open_2.Position = UDim2.new(1, 0, 0.7741009, 0)
+Open_2.Selectable = true
+Open_2.Size = UDim2.new(0, 109, 0, 65)
+
+UICorner_5.CornerRadius = UDim.new(1, 0)
+UICorner_5.Parent = Open_2
+
+Synapse_2.Name = "Synapse"
+Synapse_2.Parent = Open_2
+Synapse_2.BackgroundColor3 = Color3.fromRGB(28, 31, 36)
+Synapse_2.BackgroundTransparency = 1.000
+Synapse_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Synapse_2.BorderSizePixel = 0
+Synapse_2.Position = UDim2.new(0.0718680695, 0, 0.0715388358, 0)
+Synapse_2.Size = UDim2.new(0, 55, 0, 55)
+Synapse_2.Image = "http://www.roblox.com/asset/?id=9524079125"
+
+Toggle.Name = "Toggle"
+Toggle.Parent = Open_2
+Toggle.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Toggle.BackgroundTransparency = 1.000
+Toggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.BorderSizePixel = 0
+Toggle.Position = UDim2.new(0, 0, -0.0138714127, 0)
+Toggle.Size = UDim2.new(0, 109, 0, 65)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = ""
+Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.TextSize = 14.000
+
+-- Scripts:
+
+local function DWFGWUQ_fake_script() -- Close_2.Hack close 
+	local script = Instance.new('LocalScript', Close_2)
+
+	local hack = script.Parent.Parent
+	local icon = script.Parent.Parent.Parent.Open
+	script.Parent.MouseButton1Click:Connect(function() 					
+		hack.Visible = false
+		icon.Visible = true
+	end)	
+end
+coroutine.wrap(DWFGWUQ_fake_script)()
+local function RPPHQ_fake_script() -- Open_2.Drag 
+	local script = Instance.new('LocalScript', Open_2)
+
+	--// Services
+	local Players = game:GetService('Players')
+	local UIS = game:GetService("UserInputService")
+	
+	--// Variables
+	local UI = script.Parent
+	
+	local Player = Players.LocalPlayer
+	local Mouse = Player:GetMouse()
+	
+	local Hovered = false
+	local Holding = false
+	local MoveCon = nil
+	
+	local InitialX, InitialY, UIInitialPos
+	
+	local ViewPortSize = workspace.Camera.ViewportSize
+	local Speed = 2.5
+	
+	--// Functions
+	
+	local function Drag()
+		if Holding == false then MoveCon:Disconnect(); return end
+		local distanceMovedX = (InitialX - Mouse.X)*Speed
+		local distanceMovedY = (InitialY - Mouse.Y)*Speed
+	
+		local Pos = UIInitialPos - UDim2.new(distanceMovedX/ViewPortSize.X, 0, distanceMovedY/ViewPortSize.Y, 0)
+		UI.Position = UDim2.new(math.clamp(Pos.X.Scale, 0, 1-UI.Size.X.Scale), 0, math.clamp(Pos.Y.Scale, 0, 1-UI.Size.Y.Scale), 0)
+	end
+	
+	--// Connections
+	
+	UI.MouseEnter:Connect(function()
+		Hovered = true
+	end)
+	
+	UI.MouseLeave:Connect(function()
+		Hovered = false
+	end)
+	
+	UIS.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			Holding = Hovered
+			if Holding then
+				InitialX, InitialY = Mouse.X, Mouse.Y
+				UIInitialPos = UI.Position
+	
+				MoveCon = Mouse.Move:Connect(Drag)
+			end
+		end
+	end)
+	
+	UIS.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			Holding = false
+		end
+	end)
+end
+coroutine.wrap(RPPHQ_fake_script)()
+local function CIAREW_fake_script() -- Toggle.Hack open 
+	local script = Instance.new('LocalScript', Toggle)
+
+	local hack = script.Parent.Parent.Parent.Parent.Main
+	local icon = script.Parent.Parent.Parent
+	script.Parent.MouseButton1Click:Connect(function() 					
+		hack.Visible = true
+		icon.Visible = false
+	end)	
+end
+coroutine.wrap(CIAREW_fake_script)()
